@@ -1,0 +1,12 @@
+aa.txt
+a.txt
+bb.txt
+b.txt
+copied
+lsresults.txt
+aa.txt
+a.txt
+bb.txt
+b.txt
+copied
+lsresults.txt
