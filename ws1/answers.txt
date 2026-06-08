@@ -1,0 +1,4 @@
+T1: ~cd/cs131/ws1
+T2: ls ../data
+T3: file logs/app01.log, file.env, file commands reports type
+T4: ls -alhr
