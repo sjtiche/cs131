@@ -2,3 +2,11 @@ T1: ~cd/cs131/ws1
 T2: ls ../data
 T3: file logs/app01.log, file.env, file commands reports type
 T4: ls -alhr
+T5: ls -lS logs/| sort
+T6: size:1048576, owner: ishigaki-cs8, last-mod: Jun  8 10:47
+T7: ls data/Data?.csv
+T8: ls [[:upper:]]*
+T9: ls logs/BACKUP.[0-9][0-9][0-9]
+T10: cp -r data/ backup/
+T11: mv data/readme.txt data/README.md
+T12: rm -ri backup/data/
