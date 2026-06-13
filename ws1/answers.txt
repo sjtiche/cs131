@@ -10,3 +10,18 @@ T9: ls logs/BACKUP.[0-9][0-9][0-9]
 T10: cp -r data/ backup/
 T11: mv data/readme.txt data/README.md
 T12: rm -ri backup/data/
+T14: git clone https://github.com/sjtiche/cs131/
+B1: grep -E "city":"Santa Barbara" /data/yelp/yelp_academic_dataset_business.json
+B2: grep -c "state":"CA" /data/yelp/yelp_academic_dataset_business.json
+B3: grep -i worth /data/yelp/yelp_academic_dataset_review.json
+B4: grep -E "Coffee|Cafè|Cafe" /data/yelp/yelp_academic_dataset_business.json
+B5: grep -E "\"stars\":(4\.5|5\.0)" /data/yelp/yelp_academic_dataset_business.json
+B6: grep -E "stars":5.0, /data/yelp/yelp_academic_dataset_review.json
+B7: grep -E '[A-Za-z0-9]+@[A-Za-z]+\.[A-Za-z]{2,}' /data/yelp/yelp_academic_dataset_review.json
+B8: grep -E '[0-9]{3}-[0-9]{3}-[0-9]{4}' /data/yelp/yelp_academic_dataset_review.json
+B9: grep -E '"name":"P' /data/yelp/yelp_academic_dataset_business.json
+B10: grep -i -c 'pizza' /data/yelp/yelp_academic_dataset_review.json
+B11: grep -i -n 'service' /data/yelp/yelp_academic_dataset_review.json, n prints line numbers
+B12: grep -v '"categories":"Restaurants' /data/yelp/yelp_academic_dataset_business.json, v inverts
+B13: line 1 chooses businesses that are in California, line 2 -o searches for review counts with a number and -E extracts, line 3 searches and extracts just the number, line 4 takes the top 3 sorted by decreasing number
+B14: grep '"city":"Santa Barbara"' /data/yelp/yelp_academic_dataset_business.json | grep -oE '"name":"[^"]+"' | sed 's/"name":"//; s/"//' | sort
