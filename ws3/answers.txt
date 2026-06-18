@@ -1,0 +1,25 @@
+A1: ls -l > listing.txt | date >> listing.txt
+A2: ls /nonexistent_dir 2> errors.txt; stderr is file descriptor 2
+
+A5: I see all the files that come up with /etc, dev/null is a place to put unwanted code
+A6: sort fruits.txt | uniq
+A7: sort fruits.txt | uniq -c | sort -nr
+A8: grep "ERROR" server.log | wc -l
+A9: grep "ERROR" server.log > errors_only.txt
+A10: grep -oE '^[A-Z]+' server.log | sort | uniq -c | sort -nr
+A11: grep -o '"state":"[A-Z][A-Z]"' /data/yelp/yelp_academic_dataset_business.json | sort | uniq -c | sort -nr | head -5
+B1: 
+uid=1041(ishigaki-cs8) gid=1041(ishigaki-cs8) groups=1041(ishigaki-cs8),44(video),988(docker),993(render), uig is the user id and gid is the group id
+B2: -rw-rw-r--, read/write for owner, read/write for group, global is read only
+B3: default:-rw-rw-r--
+B4: chmod 000 secret.txt, error: cat: secret.txt: Permission denied, chmod u+rw secret.txt
+B5: chmod 640 fruits.txt, octal 640
+B6:
+find ~/cs131/ws3 -type f -user ishigaki-cs8 -perm -u=w
+C1: [1] 915571
+C2: [1]+  Running                 bash long.sh > log.txt &
+C3: [1]+  Stopped                 bash long.sh > log.txt
+C4: bg bash long.sh
+C5: kill sends SIGTERM by default
+C6: ps -p 916551
+C7: disown takes the job from the users shell and detaches it so it can run unconnected to the current shell
