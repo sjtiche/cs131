@@ -1,0 +1,16 @@
+Q1: echo task: practice git >> notes.md | git add notes.md | git commit -m ws2: add task line
+Q2: git log -3 --oneline, --oneline makes it compact
+Q4: git revert 53f5c53; grep -n WRONG notes.md | echo WRONG line removed
+Q5: git rm --cached bigdata.bin | echo bigdata.bin >> .gitignore | git add .gitignore | git commit --amend --no-edit | git push
+Q6: git checkout -b feature-summary
+Q7: git add summary.md | git commit -m "ws2: add summary"
+Q8: git diff --staged
+Q9: git switch main | git merge feature-summary
+Q10: git branch -d feature-summary, -d deletes a merged branch
+Q11: git merge conflict-branch, ws2/summary.md is conflicted
+Q12: git status
+Q14: git summary.md | git commit
+Q15: git fetch origin | git log HEAD..origin/main --oneline
+Q16: fetch does not merge the changes while pull downloads changes and merges them
+
+
