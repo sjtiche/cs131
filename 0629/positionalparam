@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "\$0 = $0, \$1 = $1, \$2 = $2"
+
+echo "$# params exist. They look like: $*"
+
+count=1
+
+while [[ $# -gt 0 ]]; do
+	echo $1
+	count=$((count + 1))
+	echo "count = $count"
+	shift
+done
+

@@ -1,0 +1,165 @@
+  756  cd cs131
+  757  ls
+  758  mkdir 0629
+  759  cd 0629/
+  760  vim myfirstss
+  761  cat myfirstss 
+  762  ls
+  763  ls -l
+  764  chmod 754 myfirstss 
+  765  ls -l
+  766  ./myfirstss 
+  767  echo $PATH
+  768  ls
+  769  which ls
+  770  /usr/bin/ls
+  771  cd ..
+  772  ls
+  773  cd ..
+  774  ls
+  775  mkdir bin
+  776  ls
+  777  mv cs131/0629/myfirstss ./bin/
+  778  ls
+  779  ls bin/
+  780  echo $PATH
+  781  vim .bashrc
+  782  echo "$PATH"
+  783  source .bashrc
+  784  ls
+  785  echo "$PATH"
+  786  ls bin/
+  787  myfirstss
+  788  cd bin/
+  789  vim html_script
+  790  cat html_script 
+  791  chmod 700 html_script 
+  792  html_script 
+  793  vim html_script 
+  794  html_script 
+  795  ls
+  796  vim html_script 
+  797  cat html_script 
+  798  html_script 
+  799  vim html_script 
+  800  html_script 
+  801  vim html_script 
+  802  html_script 
+  803  vim jh
+  804  vim html_script 
+  805  html_script 
+  806  vim html_script 
+  807  html_script 
+  808  vim html_script 
+  809  html_script 
+  810  df
+  811  du
+  812  man dh
+  813  man du
+  814  du -sh 
+  815  du -b cs131 |sort -nr  | head -10
+  816  du -b ~/cs131 |sort -nr  | head -10
+  817  vim html_script 
+  818  cat html_script 
+  819  html_script 
+  820  vim shell_script
+  821  vim html_script 
+  822  html_script 
+  823  vim html_script 
+  824  html_script 
+  825  cd ..
+  826  ls -d /usr/bin/
+  827  echo $?
+  828  ls -d /bin/usr
+  829  echo $?
+  830  true
+  831  echo $?
+  832  false
+  833  echo $?
+  834  ls
+  835  test -e cs131
+  836  echo $?
+  837  vim test_expressions
+  838  chmod 700 test_expressions 
+  839  ./test_expressions 
+  840  vim test_expressions 
+  841  mv test_expressions ~/cs131/0629/
+  842  cd cs131/0629/
+  843  ls
+  844  ./test_expressions 
+  845  test -d ~/.bashrc 
+  846  echo $?
+  847  test -e ~/.bashrc 
+  848  echo $?
+  849  test -f ~/.bashrc 
+  850  echo $?
+  851  vim test_expressions 
+  852  ./test_expressions 
+  853  echo $?
+  854  du -h
+  855  du -s
+  856  du -sh 
+  857  vim test_expressions 
+  858  ./test_expressions 
+  859  ls -a
+  860  ls -l
+  861  vim idk
+  862  ./idk
+  863  chmod 700 idk 
+  864  ./idk
+  865  vim idk 
+  866  rm -rif idk 
+  867  ls
+  868  touch a.txt
+  869  touch b.txt
+  870  touch texta.txt
+  871  touch textb.txt
+  872  vim for_practice
+  873  cat for_practice 
+  874  chmod 700 for_practice 
+  875  ./for_practice 
+  876  vim for_practice 
+  877  ls -a
+  878  touch .a.txt
+  879  ls
+  880  ls -a
+  881  vim for_practice 
+  882  ./for_practice 
+  883  vim positionalparam
+  884  chmod 700 positionalparam 
+  885  ./positionalparam 
+  886  ./ positionalparam hello world
+  887  ./positionalparam hello world
+  888  vim firstif
+  889  ls
+  890  mv test_expressions firstif
+  891  vim firstif 
+  892  ./firstif /home/ishigaki-cs8/cs131/0629/firstif 
+  893  vim firstif 
+  894  ./firstif /home/ishigaki-cs8/cs131/0629/firstif 
+  895  ls
+  896  vim positionalparam 
+  897  ./positionalparam hello
+  898  ./positionalparam hello world
+  899  vim positionalparam 
+  900  ./ positionalparam *
+  901  ./positionalparam 
+  902  ./positionalparam *
+  903  vim firstif 
+  904  vim for_practice 
+  905  vim positionalparam 
+  906  ./positionalparam 
+  907  ./positionalparam *
+  908  cat positionalparam 
+  909  history 10
+  910  history 908 > class_commands.txt
+  911  ls
+  912  head class_commands.txt 
+  913  rm -i class_commands.txt 
+  914  history 100 > class_commands.txt
+  915  head class_commands.txt 
+  916  rm -i class_commands.txt 
+  917  history 150 > class_commands.txt
+  918  head class_commands.txt 
+  919  rm -i class_commands.txt 
+  920  history 200 > class_commands.txt

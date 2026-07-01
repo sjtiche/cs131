@@ -1,0 +1,15 @@
+#!/bin/bash
+
+FILE=$HOME/.bashrc
+
+echo -n "please enter a file name -> "
+read FILE
+
+FILE = "\$1"
+
+if [ -f $FILE ]; then
+	echo "$FILE exists"
+else
+	echo "$FILE does not exist"
+fi
+
