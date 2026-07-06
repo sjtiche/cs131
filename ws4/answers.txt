@@ -1,0 +1,28 @@
+T1: https://gist.github.com/zachbrowne/8bc414c9f30192067831fafebd14255c#file-the-ultimate-bad-ass-bashrc-file-L322
+
+mkdirg () -> the shell command is simple but would be very useful for my projects. It makes a new directory with the first argument '$1' passed to the function. Then it moves into the newly created directory.
+
+https://gist.github.com/zachbrowne/8bc414c9f30192067831fafebd14255c#file-the-ultimate-bad-ass-bashrc-file-L301
+
+cpg () -> the command is another really useful one for me. Alot of the time I am copying a script that only needs a small modification for other samples in a different directory. Copying and then moving into the new directory will save me alot of directory moving. The command takes 2 arguements and intially checks if the second arguement (-d $2) is a directory. If it is, it copies the first arguement ($1) into $2 directory. If it is not a directory it simply copies the file $1 into a new name ($2). 
+
+T2: 
+This is a small script I wrote for my work on bioinformatics.
+
+mkdirg rerun_SRR
+#mkdirg makes a directory for the samples I will need to rerun and moves there.
+
+alias rm='rm -ir'
+#since I will need to remove the incomplete files it is easier to have an alias for rm to avoidmistakes
+
+#remove file that are incomplete:
+for d in /df/dairy_metaG/0_raw_reads/s1/SRR/SRR*; do
+    srr=$(basename "$d")
+    if [ ! -f "$d/${srr}.sra" ]; then
+        echo "Removing incomplete: $d"
+        rm "$d"
+    fi
+done
+
+#the if statement moves through all the SRR directories and then if it did not completely download (there are temp files and no .sra file) it will delete them. Then later I will save all the incomplete SRR's into a txt file in the new SRR_rerun directory made.
+
