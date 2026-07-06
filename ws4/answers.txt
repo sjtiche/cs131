@@ -9,15 +9,20 @@ cpg () -> the command is another really useful one for me. Alot of the time I am
 T2: 
 This is a small script I wrote for my work on bioinformatics.
 
+https://github.com/sjtiche/cs131/blob/14169130ae4c0102b0662fa2be82c52a173f4a27/ws4/answers.txt#L12
 mkdirg rerun_SRR
 #mkdirg makes a directory for the samples I will need to rerun and moves there.
 
+https://github.com/sjtiche/cs131/blob/14169130ae4c0102b0662fa2be82c52a173f4a27/ws4/answers.txt#L15
 alias rm='rm -ir'
 #since I will need to remove the incomplete files it is easier to have an alias for rm to avoidmistakes
 
 #remove file that are incomplete:
 for d in /df/dairy_metaG/0_raw_reads/s1/SRR/SRR*; do
     srr=$(basename "$d")
+
+https://github.com/sjtiche/cs131/blob/14169130ae4c0102b0662fa2be82c52a173f4a27/ws4/answers.txt#L21
+
     if [ ! -f "$d/${srr}.sra" ]; then
         echo "Removing incomplete: $d"
         rm "$d"
